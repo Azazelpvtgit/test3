@@ -54,7 +54,7 @@ async def start_command(client: Client, message: Message):
         try:
             messages = await get_messages(client, ids)
         except:
-            await message.reply_text("Something went wrong..! For any query contact here: https://t.me/fl4meChats")
+            await message.reply_text("Something went wrong..! For any query contact here: https://t.me/fl4me_Chats")
             return
         await temp_msg.delete()
 
@@ -87,7 +87,7 @@ async def start_command(client: Client, message: Message):
                     if copied_msg_for_deletion:
                         track_msgs.append(copied_msg_for_deletion)
                     else:
-                        print("Failed to copy message after retry, skipping. For any query contact here: https://t.me/fl4meChats")
+                        print("Failed to copy message after retry, skipping. For any query contact here: https://t.me/fl4me_Chats")
 
                 except Exception as e:
                     print(f"Error copying message: {e}")
