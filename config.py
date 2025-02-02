@@ -52,12 +52,12 @@ FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "Hello {first}\n\n<b>You need to
 CUSTOM_CAPTION = os.environ.get("CUSTOM_CAPTION", None)
 
 #set True if you want to prevent users from forwarding files from bot
-PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "False") == "False" else False
+PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "False" else False
 
 # Auto delete time in seconds.
 AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "180"))
-AUTO_DELETE_MSG = os.environ.get("AUTO_DELETE_MSG", "WARNING ⚠️/n/nThis file will be automatically deleted in {time} seconds‼️/n/nPLEASE SAVE THIS FILE IN YOUR SAVED MESSAGES OR IN ANY OTHER CHAT BEFORE IT GETS DELETED‼️.")
-AUTO_DEL_SUCCESS_MSG = os.environ.get("AUTO_DEL_SUCCESS_MSG", "Your file has been successfully deleted use that link again if you want to see that file again./n/nThank you for using our service. ✅ Powered by~ @Fl4me_Organization")
+AUTO_DELETE_MSG = os.environ.get("AUTO_DELETE_MSG", "WARNING ⚠️\n\nThis file will be automatically deleted in {time} seconds‼️\n\n<b>PLEASE SAVE THIS FILE IN YOUR SAVED MESSAGES OR IN ANY OTHER CHAT BEFORE IT GETS DELETED‼️.</b>")
+AUTO_DEL_SUCCESS_MSG = os.environ.get("AUTO_DEL_SUCCESS_MSG", "Your file has been successfully deleted use that link again if you want to see that file again.\n\nThank you for using our service. ✅ Powered by~ @Fl4me_Organization")
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
