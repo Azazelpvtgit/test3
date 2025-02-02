@@ -56,8 +56,8 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "False" e
 
 # Auto delete time in seconds.
 AUTO_DELETE_TIME = int(os.getenv("AUTO_DELETE_TIME", "180"))
-AUTO_DELETE_MSG = os.environ.get("AUTO_DELETE_MSG", "WARNING ⚠️ This file will be automatically deleted in {time} seconds‼️ PLEASE SAVE THIS FILE IN YOUR SAVED MESSAGES OR IN ANY OTHER CHAT BEFORE IT GETS DELETED‼️.")
-AUTO_DEL_SUCCESS_MSG = os.environ.get("AUTO_DEL_SUCCESS_MSG", "Your file has been successfully deleted use that link again if you want to see that file again. Thank you for using our service. ✅ Powered by~ @Fl4me_Organization")
+AUTO_DELETE_MSG = os.environ.get("AUTO_DELETE_MSG", "WARNING ⚠️/n/nThis file will be automatically deleted in {time} seconds‼️/n/nPLEASE SAVE THIS FILE IN YOUR SAVED MESSAGES OR IN ANY OTHER CHAT BEFORE IT GETS DELETED‼️.")
+AUTO_DEL_SUCCESS_MSG = os.environ.get("AUTO_DEL_SUCCESS_MSG", "Your file has been successfully deleted use that link again if you want to see that file again./n/nThank you for using our service. ✅ Powered by~ @Fl4me_Organization")
 
 #Set true if you want Disable your Channel Posts Share button
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'True'
@@ -66,7 +66,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "❌Don't send me messages directly I'm only File Share bot!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7804819854)
+ADMINS.append()
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
